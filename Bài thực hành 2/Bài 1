@@ -1,1 +1,25 @@
 
+B1 - BTH2.cpp
+100%
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int hang;
+	cin >> hang;
+	int*ma = (int*)malloc(hang * sizeof(int));
+	if(ma == NULL){	
+	cout << "Khong du bo nho" << '\n' << endl;
+	return 1;
+	}
+	for(int i = 0; i < hang; i++){
+		cin >> ma[i];
+	}
+	for(int i = 0; i < hang; i++){
+		cout << ma[i] << '\t' << endl;
+	}
+	cout << '\n';
+	free(ma);
+	return 0;
+	}
+
+Đang hiển thị B1 - BTH2.cpp.
